@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --primary-color-red: hsl(0, 78%, 62%);
+    --primary-color-cyan: hsl(180, 62%, 55%);
+    --primary-color-orange: hsl(34, 97%, 64%);
+    --primary-color-blue: hsl(212, 86%, 64%);
+    --secondary-color-blue-1: hsl(234, 12%, 34%);
+    --secondary-color-blue-2: hsl(229, 6%, 66%);
+    --secondary-color-blue-3: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.5;
+    background: var(--secondary-color-blue-3);
+    color: var(--secondary-color-blue-2);
+}
+h1 {
+    font-size: 1.75em;
+    font-weight: 200;
+    color: var(--secondary-color-blue-1);
+    margin-bottom: 0.75em;
+}
+h2 {
+    color: var(--secondary-color-blue-1);
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+.four-card-section {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 4em 2em;
+}
+.heading {
+    margin-bottom: 3em;
+}
+.heading p {
+    line-height: 1.6;
+}
+.highlight {
+    font-weight: 600;
+}
+.card {
+    margin-top: 1.5em;
+    padding: 1.5em;
+    background: #fff;
+    box-shadow: 0 1.5em 1.5em rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    height: 16em;    
+}
+.card p {
+    margin-bottom: 2em;
+}
+.feature-icon {
+    text-align: right;
+}
+
+.sup--card {
+    border-top: 4px solid var(--primary-color-cyan);
+}
+.team--card {
+    border-top: 4px solid var(--primary-color-red);
+}
+.karma--card {
+    border-top: 4px solid var(--primary-color-orange);
+}
+.cal--card {
+    border-top: 4px solid var(--primary-color-blue);
+}
+.heading {
+    max-width: 30em;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    text-align: center;
+}
+.icon {
+    height: 3.5em;
+}
+@media only screen and (min-width: 37em) {
+    .four-card-section {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .card {        
+        width: 24em;
+    }
+}
+@media only screen and (min-width: 56em) {
+    .heading {
+        max-width: 30em;
+        margin: 0 auto;
+        margin-bottom: 4em;
+        text-align: center;
+    }
+    
+    .four-card {
+        display: grid;
+        gap: 1.5em;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .card {
+        width: 16em;
+        margin: 0;
+    }
+    .sup--card {
+        grid-row: 1/-1;
+    }
+    .cal--card {
+        grid-column: 3/-1;
+        grid-row: 1/-1;
+    }
+   
+}
+@media only screen and (min-width: 62em) {
+    .heading {
+        max-width: 34em;
+        margin: 0 auto;
+        margin-bottom: 4em;
+        text-align: center;
+    }
+    h1 {
+        font-size: 2.4em;
+        padding: 0 1em;
+        margin-bottom: 0.5em;
+    }
+    .four-card {
+        gap: 2em;
+    }
+    .card {
+        margin: 0;
+    }
+    .card p {
+        margin-bottom: 2.5em;
+    }
+    .sup--card {
+        grid-row: 1/-1;
+    }
+    .cal--card {
+        grid-column: 3/-1;
+        grid-row: 1/-1;
+    }
+}
+@media only screen and (min-width: 77em) {
+    .card {
+        width: 22em;
+    }
+}
